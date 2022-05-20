@@ -23,6 +23,15 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GivLoginScreen();
+    return GivLoginScreen(
+      onLoginButtonPressed: (_, __) {
+        print("EMAIL $_, PASSWORD $__");
+        print("SIGN IN TAPPED");
+      },
+      onSignupButtonPressed: (_, __, ___) {
+        print("EMAIL $_, PASSWORD $__");
+        print("SIGN UP TAPPED");
+      },
+    );
   }
 }

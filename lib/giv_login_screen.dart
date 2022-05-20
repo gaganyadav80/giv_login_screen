@@ -1,12 +1,5 @@
 library giv_login_screen;
 
-import 'package:flutter/material.dart';
-
-class GivLoginScreen extends StatelessWidget {
-  const GivLoginScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
+export 'login_page.dart';
+export 'components/giv_decoration.dart';
+export 'components/custom_form_field.dart';
